@@ -17,7 +17,7 @@ app.use(express.static("public"));
 
 const URI = process.env.MONGODB_URI;
 
-mongoose.connect(URI || "mongodb://localhost/budget", {
+mongoose.connect(URI || "mongodb://localhost/budget-tracker", {
   useNewUrlParser: true,
   useFindAndModify: false,
   useUnifiedTopology: true
